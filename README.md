@@ -3,10 +3,15 @@
 # 1. rearrange_task_planner
 
 # 2. Package summary
-: This package determines the object to be relocated in order to clear all obstacles that prevent grasping a target object in clutter. It can be used for three cases varying depending on the degree of uncertainty in object recognition: 1) all objects are detected, 2) the target object is detected but some other objects are not, and 3) some objects including the target object are undetected.
- 2.1 Maintainer status : maintained
- 2.2 Maintainer : Sang Hun Cheong (welovehun@kist.re.kr), Jinhwi Lee (jinhooi@kist.re.kr), Changjoo Nam (cjnam@kist.re.kr)
- 2.3 Author : Sang Hun Cheong (welovehun@kist.re.kr)
+: This package determines the object to be relocated in order to clear all obstacles that prevent grasping a target object in clutter.<br> 
+ 2.1 Maintainer status : maintained<br>
+ 2.2 Maintainer :<br> 
+ - Sang Hun Cheong (welovehun@kist.re.kr)<br>
+ - Jinhwi Lee (jinhooi@kist.re.kr)<br>
+ - Changjoo Nam (cjnam@kist.re.kr)<br>
+ 
+ 2.3 Author :<br> 
+ - Sang Hun Cheong (welovehun@kist.re.kr)<br>
 
 # 3. Overview
  : This package determines the object to be relocated in order to clear all obstacles that prevent grasping a target object in clutter. It works for the cases where i) all objects are known, ii) some objects including the target are unknown, and iii) some objects including the target are unknown. The input is the 2D coordinates of all known movable objects and immovable objects (e.g., walls). Before every relocation action of the robot, this information is obtained from the service node system_manager. The package finds the object to be relocated. The information of the object (ID and 2D coordinates) is sent to the client node system_manager. 
