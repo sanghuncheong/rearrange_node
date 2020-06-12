@@ -20,9 +20,11 @@
  : The package does not require any hardware device.
 
 # 5. Quick start 
- : Install the package through catkin build system. 
+1. Install the package through catkin build system.
+2. ```rosrun rearrange_node rearrange_task_planner.py```
+3. run test_module file(src/src/test_module.py)
 
-### Example Input test
+### Example Input test(src/src/test_module.py)
 ```
 #!/usr/bin/env python
 
@@ -123,17 +125,15 @@ Process finished with exit code 0
 > geometry_msgs/Quaternion object_orientation : the orientation of the object in quaternions(x, y, z, w).<br>
 > geometry_msgs/Vector3 object_scale : the scale of the object in each x, y, z-axis.<br>
 
-○ rearrange_env_srv.srv<br>
-> Service requests<br>
->> env_object_info_msg workspace : the workspace object (ex.table).<br>
->> env_object_info_msg target : the target object on the workspace object.<br>
->> env_object_info_msg[] objects : the obstacles on the workspace object.<br>
+○ rearrange_env_srv.srv (request)<br>
+> env_object_info_msg workspace : the workspace object (ex.table).<br>
+> env_object_info_msg target : the target object on the workspace object.<br>
+> env_object_info_msg[] objects : the obstacles on the workspace object.<br>
 
 # 7. Output/Service Response
-○ rearrange_env_srv.srv<br>
-> Service response<br>
->> string[] object_name : the object to be relocated.<br>
->> geometry_msgs/Point[] rearrange_positions : the list of positions that the object to be rearranged.<br>
+○ rearrange_env_srv.srv (response)<br>
+> string[] object_name : the object to be relocated.<br>
+> geometry_msgs/Point[] rearrange_positions : the list of positions that the object to be rearranged.<br>
 
 # 8. Parameters
 N/A
