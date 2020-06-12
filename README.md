@@ -18,9 +18,10 @@
  : Install the package through catkin build system. 
 
 ===============================================================
-
+```
 Example input (10 objects, target ID = 8)robot_height = 0.075robot_pose = [0.32299999999999995, -0.06575]target_id = 8N = 10R = [0.025, 0.026, 0.03, 0.028, 0.026, 0.025, 0.03, 0.03, 0.029, 0.025, 0.03]H = [0.073, 0.071, 0.068, 0.07, 0.071, 0.069, 0.07, 0.073, 0.066, 0.066, 0.075]X = [0.475, 0.306, 0.475, 0.36405000000000004, 0.306, 0.17099999999999999, 0.43005000000000004, 0.20405, 0.20900000000000002, 0.17099999999999999]Y = [0.19475, 0.14075000000000001, 0.36975, 0.26625, 0.40975000000000006, 0.16075, 0.27425, 0.28725, 0.04225, 0.38375000000000004]x_min =0.06299999999999999x_max =0.583y_min =-0.06575y_max =0.51775# Example run
-
+```
+```
 import rospy
 from relocate_planner.srv._relocate_env_srv import *
 rospy.wait_for_service('relocate_srv')
@@ -43,6 +44,7 @@ accessibility = ret.accessibility
 relocate_id= ret.relocate_id
 relocate_coordinates = ret.relocate_coordinates
 print('Target accessibility (-1=unaccessible, 0=undetected, 1=accessible): %d' % accessibility)print('Relocate Object %d at (%f, %f)' % (relocate_id, relocate_coordinates[0], relocate_coordinates[1]))
+```
 
 # 6. Input/Service Request
 ○ env_object_info_msg.msg<br>
