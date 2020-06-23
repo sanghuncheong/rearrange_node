@@ -123,7 +123,7 @@ Process finished with exit code 0
 > string[] object_name : the name of the object.<br>
 > geometry_msgs/Point object_position : the position of the object.<br>
 > geometry_msgs/Quaternion object_orientation : the orientation of the object in quaternions(x, y, z, w).<br>
-> geometry_msgs/Vector3 object_scale : the scale of the object in each x, y, z-axis.<br>
+> geometry_msgs/Vector3 object_scale : the scale of the object in each x, y, z-axes.<br>
 
 ○ rearrange_env_srv.srv (request)<br>
 > env_object_info_msg workspace : the workspace object (ex.table).<br>
