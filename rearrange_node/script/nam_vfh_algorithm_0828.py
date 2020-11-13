@@ -90,6 +90,7 @@ def relocate_planner(robot_height, robot_pose, target_id, N, R, H, X, Y, x_min, 
     robot_radius = max(R)
     R.append(robot_radius)
 
+    # excluding walls can let the algorithm work slow
     x_min = x_min-4*mean_r
     y_min = y_min-4*mean_r
     x_max = x_max+4*mean_r
